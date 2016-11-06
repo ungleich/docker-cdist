@@ -9,3 +9,5 @@ RUN apt-get update -y && \
         apt-get clean && \
         rm -rf /var/lib/apt/lists/* && \
         git clone -b $branch https://github.com/ungleich/cdist.git 
+
+RUN echo 'PATH=$PATH:/root/cdist/bin' >> .bashrc
