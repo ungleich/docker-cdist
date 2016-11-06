@@ -1,7 +1,7 @@
 FROM ubuntu
 MAINTAINER ungleich <team at ungleich.ch>
 
-ENV branch=master
+ENV branch=beta
 
 WORKDIR /root
 RUN apt-get update -y && \
