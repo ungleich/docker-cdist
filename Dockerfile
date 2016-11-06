@@ -1,5 +1,5 @@
 FROM ubuntu
-MAINTAINER Muneeb Ahmad <beenum>
+MAINTAINER ungleich <team at ungleich.ch>
 WORKDIR /root
 RUN apt-get update -y && \
         apt-get install -y git python3 python3-pip && \
