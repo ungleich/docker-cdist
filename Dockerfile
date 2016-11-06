@@ -1,8 +1,8 @@
 FROM ubuntu
 MAINTAINER ungleich <team at ungleich.ch>
 
-ENV branch=master
-ENV repo=https://github.com/ungleich/cdist.git 
+ENV branch=beta-preos
+ENV repo=https://github.com/darko-poljak/cdist/
 
 WORKDIR /root
 RUN apt-get update -y && \
