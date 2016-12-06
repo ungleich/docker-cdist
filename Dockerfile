@@ -17,3 +17,7 @@ RUN apt-get update -y && \
         git clone -b $branch $repo
 
 RUN echo 'PATH=$PATH:/root/cdist/bin' >> .bashrc
+
+# Allow automatic runs of cdist
+RUN mkdir /root/.ssh
+COPY sshconfig /root/.ssh/config
