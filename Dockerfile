@@ -2,7 +2,7 @@ FROM ubuntu
 MAINTAINER ungleich <team at ungleich.ch>
 
 ENV branch=beta
-ENV repo=https://github.com/ungleich/cdist.git 
+ENV repo=https://github.com/ungleich/cdist.git
 
 WORKDIR /root
 RUN apt-get update -y && \
@@ -10,7 +10,8 @@ RUN apt-get update -y && \
             git \
             ca-certificates \
             python3 \
-            lsb-core && \
+            lsb-core \
+            openssh-client && \
         apt-get clean && \
         rm -rf /var/lib/apt/lists/* && \
         git clone -b $branch $repo
