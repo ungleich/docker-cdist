@@ -12,6 +12,7 @@ RUN apt-get update -y && \
             python3 \
             lsb-core \
             openssh-client && \
+            iputils-ping
         apt-get clean && \
         rm -rf /var/lib/apt/lists/* && \
         git clone -b $branch $repo
